@@ -26,6 +26,9 @@ array[0];  // equals 1
 var data = array[1];
 ```
 
+* Variables which are defined outside of a function block have global scope.<br>
+Variables which are used without the ```var``` keyword are automatically created in the global scope.
+
 * ```.pop()``` function:<br>
 Pop a value off of the end of an array. Any type of data structure can be popped off of an array - numbers, strings, even nested arrays.
 
@@ -108,6 +111,39 @@ var MotorBike = function(){
   this.engines = 1;
   this.seats = 2;
 }
+```
+
+* Test objects for properties<br>
+<code>.hasOwnProperty([propname]) method</code>
+Return ```true``` or ```false``` if the property is found or not.<br>
+**Example**)
+```
+var myObj = {
+  top:"hat",
+  bottom: "pants"
+};
+myObj.hasOwnProperty("top");  // true
+myOjb.hasOwnProperty("middle");  // false
+```
+
+* JavaScript object notation JSON<br>
+Use format of JavaScript objects to store data. JSON is flexible because it allows for Data Structures with arbitrary combinations of strings, numbers, booleans, arrays, and objects<br>
+JSON objects can contain both nested objects and nested arrays.<br>
+**Example**)<br>
+```
+var ourMusic = [
+  {
+    "artist":"Daft Punk",
+    "title":"Homework",
+    "release_year":1997,
+    "formats":[
+      "CD",
+      "Cassette",
+      "LP"
+    ],
+    "gold":true
+  }
+];
 ```
 
 * ```map``` method:<br>
